@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha generator with Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="header__title">Captcha generator with timer</h1>
+            <button class="captcha__generator">Captcha ver</button>
+        </header>
+        <div class="captcha__out">
+            
+        </div>
+        <main>
+            <form id="form" autocomplete="off">
+                <input id="formInput" type="text" placeholder="captchani daxil ele">
+                <button class="add__captcha" type="submit">Gonder</button>
+            </form>
+            <div class="timer">
+               
+                <div class="timer__block">
+                    <div class="time second">00</div>
+                    <div class="title">Saniye</div>
+                </div>
+                <div class="timer__block">
+                    <div class="time millisecond">00</div>
+                    <div class="title">MilliSaniye</div>
+                </div>
+            </div>
+            <div class="buttons">
+        
+                <button class="button pause">Pause</button>
+         
+          
+            </div>
+
+            <div class="results__block">
+                <div class="results__title">
+                    Results
+                </div>
+                <div class="results"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
