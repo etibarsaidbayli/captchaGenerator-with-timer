@@ -23,10 +23,15 @@ body {
 }
 
 header {
-  padding: 30px 20px;
+  padding: 30px 20px 30px 40px;
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+    flex-grow: 1;
 }
 
 header button {
@@ -35,10 +40,10 @@ header button {
   cursor: pointer;
   font-size: 25px;
   border-radius: 10px;
+  align-self: flex-end;
 }
 
 #form {
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,74 +64,71 @@ header button {
 }
 
 #form button {
-    padding: 15px 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 25px;
-    border-radius: 10px;
+  padding: 15px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  border-radius: 10px;
 }
 
 .timer {
-    display: flex;
-    justify-content: center;
-    gap:20px;
-    margin-bottom: 20px;;
-    align-items: center;
-    font-size: 22px;
-
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+  font-size: 22px;
 }
 
 .timer__block {
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .time {
-    background-color: rgb(99, 106, 20);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:#fff;
-    font-size: 95px;
-    padding:5px;
+  background-color: rgb(99, 106, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 95px;
+  padding: 5px;
 }
 
 .title {
-    background-color: bisque;
-    padding: 5px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-
+  background-color: bisque;
+  padding: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .results__block {
-    position: absolute;
-    background-color: #fff;
-    left:15px;
-    top: 0;
-    width: 250px;
-    border: 1px solid gray;
-    color:purple;
-    font-size: 22px;
-    padding:15px;
-    text-align: center;
-    display: none;
-    
+  position: absolute;
+  background-color: #fff;
+  left: 15px;
+  top: 0;
+  width: 250px;
+  border: 1px solid gray;
+  color: purple;
+  font-size: 22px;
+  padding: 15px;
+  text-align: center;
+  display: none;
 }
 
 .buttons button {
-    padding: 15px 10px;
-    border: none;
-    cursor: pointer;
-    font-size: 25px;
-    border-radius: 10px;
+  padding: 15px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  border-radius: 10px;
 }
 
 .captcha__out {
-    background-color: #fff;
-    margin-bottom: 50px;
-    padding:30px 0;
-    font-size: 40px;
-    letter-spacing: 5px;
-    display: none;
+  background-color: #fff;
+  margin-bottom: 50px;
+  padding: 30px 0;
+  font-size: 40px;
+  letter-spacing: 5px;
+  display: none;
 }
