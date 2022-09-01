@@ -21,7 +21,9 @@ form.addEventListener("submit", (e) => {
     alert("zehmet olmasa xanani doldurun");
     return;
   }
-  if (captchaOut.innerText.toLowerCase() !== formInput.value) {
+  if (captchaOut.innerText.toLowerCase() !== formInput.value.toLowerCase() || 
+  captchaOut.innerText.toUpperCase() !== formInput.value.toUpperCase() 
+  ) {
     alert("captchani sehf daxil etdiniz");
     clearInterval(interval);
     clearFields();
@@ -29,6 +31,7 @@ form.addEventListener("submit", (e) => {
     formInput.value = "";
     return;
   }
+ 
   alert("CAPTCHANI DUZ DAXIL ETDINIZ. TEBRIKLER !");
   const block = document.createElement("div");
   block.innerText = `Result:${second}s:${milliSecond}ms`;
